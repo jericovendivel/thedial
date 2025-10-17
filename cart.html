@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Cart - The Dial Co.</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
 </head>
+
 <body>
   <!-- Navbar -->
   <header class="navbar">
@@ -40,6 +44,10 @@
       <a href="index.html">
         <img src="https://i.imgur.com/nCHzMo7.png" alt="The Dial Co. Logo">
       </a>
+    </div>
+    <!-- Hamburger Button (for mobile) -->
+    <div class="hamburger" id="hamburger">
+      ☰
     </div>
 
     <div class="nav-right">
@@ -131,5 +139,18 @@
       © 2025 The Dial Co. All Rights Reserved.
     </div>
   </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLeft = document.querySelector('.nav-left ul');
+    const navRight = document.querySelector('.nav-right');
+
+    hamburger.addEventListener('click', () => {
+      navLeft.classList.toggle('show');
+      navRight.classList.toggle('show');
+      hamburger.classList.toggle('active');
+    });
+  </script>
+
 </body>
+
 </html>
