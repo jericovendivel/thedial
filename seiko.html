@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seiko Collection | The Dial Co.</title>
 
-  <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -40,10 +39,9 @@
         <img src="https://i.imgur.com/nCHzMo7.png" alt="The Dial Co. Logo">
       </a>
     </div>
-<!-- Hamburger Button (for mobile) -->
-<div class="hamburger" id="hamburger">
-  ☰
-</div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">☰</div>
 
     <div class="nav-right">
       <a href="#">Account</a>
@@ -69,60 +67,126 @@
 
   <!-- Watch Grid -->
   <section class="watch-grid">
-
-    <!-- SALE -->
-    <div class="watch-card">
+    <div class="watch-card" data-product="seiko1">
       <button class="wishlist-btn">♡</button>
-      <img src="https://i.imgur.com/u455cLa.png" alt="Seiko Watch">
+      <img src="https://i.imgur.com/u455cLa.png" alt="SEIKO SSC813P1">
       <div class="watch-name">SEIKO SSC813P1</div>
-      <div class="watch-price">
-        ₱32,000.00</span>
-      </div>
+      <div class="watch-price">₱32,000.00</div>
     </div>
 
-    <div class="watch-card">
+    <div class="watch-card" data-product="seiko2">
       <button class="wishlist-btn">♡</button>
-      <img src="https://i.imgur.com/eB3qXuK.png" alt="Seiko Watch">
+      <img src="https://i.imgur.com/eB3qXuK.png" alt="SEIKO SWR054">
       <div class="watch-name">SEIKO SWR054</div>
       <div class="watch-price">₱14,490.00</div>
     </div>
 
-    <div class="watch-card sold-out">
+    <div class="watch-card sold-out" data-product="seiko3">
       <button class="wishlist-btn">♡</button>
-      <img src="https://i.imgur.com/8UCexoz.png" alt="Seiko Watch">
+      <img src="https://i.imgur.com/8UCexoz.png" alt="SEIKO SARB033">
       <div class="watch-name">SEIKO SARB033</div>
       <div class="watch-price">₱42,590.00</div>
     </div>
 
-    <div class="watch-card">
+    <div class="watch-card" data-product="seiko4">
       <button class="wishlist-btn">♡</button>
-      <img src="https://i.imgur.com/nK3GzaV.png" alt="Seiko Watch">
+      <img src="https://i.imgur.com/nK3GzaV.png" alt="SEIKO SNXS77">
       <div class="watch-name">SEIKO SNXS77</div>
       <div class="watch-price">₱7,990.00</div>
     </div>
 
-
-    <div class="watch-card">
+    <div class="watch-card" data-product="seiko5">
       <button class="wishlist-btn">♡</button>
-      <img src="https://i.imgur.com/bSBbDM9.png" alt="Seiko Watch">
+      <img src="https://i.imgur.com/bSBbDM9.png" alt="SEIKO 5 SKELETON STYLE">
       <div class="watch-name">SEIKO 5 SKELETON STYLE</div>
-      <div class="watch-price">
-        ₱16,000.00</span>
-      </div>
+      <div class="watch-price">₱16,000.00</div>
     </div>
 
-    <div class="watch-card">
+    <div class="watch-card" data-product="seiko6">
       <button class="wishlist-btn">♡</button>
-      <img src="https://i.imgur.com/YKFjAQq.png" alt="Seiko Watch">
+      <img src="https://i.imgur.com/YKFjAQq.png" alt="SEIKO SNXJ90">
       <div class="watch-name">SEIKO SNXJ90</div>
       <div class="watch-price">₱3,590.00</div>
     </div>
-
   </section>
 
-  <!-- Load More -->
-  <div class="load-more">
-    <button>LOAD MORE</button>
+  <!-- ====== MODALS FOR EACH WATCH ====== -->
+  <div id="seiko1" class="product-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="https://i.imgur.com/u455cLa.png" alt="SEIKO SSC813P1">
+      <h3>SEIKO SSC813P1</h3>
+      <p>₱32,000.00</p>
+      <div class="modal-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="seiko2" class="product-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="https://i.imgur.com/eB3qXuK.png" alt="SEIKO SWR054">
+      <h3>SEIKO SWR054</h3>
+      <p>₱14,490.00</p>
+      <div class="modal-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="seiko3" class="product-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="https://i.imgur.com/8UCexoz.png" alt="SEIKO SARB033">
+      <h3>SEIKO SARB033</h3>
+      <p>₱42,590.00</p>
+      <div class="modal-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="seiko4" class="product-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="https://i.imgur.com/nK3GzaV.png" alt="SEIKO SNXS77">
+      <h3>SEIKO SNXS77</h3>
+      <p>₱7,990.00</p>
+      <div class="modal-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="seiko5" class="product-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="https://i.imgur.com/bSBbDM9.png" alt="SEIKO 5 SKELETON STYLE">
+      <h3>SEIKO 5 SKELETON STYLE</h3>
+      <p>₱16,000.00</p>
+      <div class="modal-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="seiko6" class="product-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="https://i.imgur.com/YKFjAQq.png" alt="SEIKO SNXJ90">
+      <h3>SEIKO SNXJ90</h3>
+      <p>₱3,590.00</p>
+      <div class="modal-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
@@ -159,23 +223,39 @@
   </footer>
 
   <script>
-    document.querySelectorAll('.wishlist-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        button.classList.toggle('active');
+    // Wishlist buttons
+    document.querySelectorAll('.wishlist-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        btn.classList.toggle('active');
       });
     });
 
-      const hamburger = document.getElementById('hamburger');
-  const navLeft = document.querySelector('.nav-left ul');
-  const navRight = document.querySelector('.nav-right');
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLeft = document.querySelector('.nav-left ul');
+    const navRight = document.querySelector('.nav-right');
+    hamburger.addEventListener('click', () => {
+      navLeft.classList.toggle('show');
+      navRight.classList.toggle('show');
+    });
 
-  hamburger.addEventListener('click', () => {
-    navLeft.classList.toggle('show');
-    navRight.classList.toggle('show');
-    hamburger.classList.toggle('active');
-  });
+    // Modals
+    document.querySelectorAll('.watch-card').forEach(card => {
+      card.addEventListener('click', e => {
+        if (e.target.classList.contains('wishlist-btn')) return;
+        const id = card.getAttribute('data-product');
+        document.getElementById(id)?.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.close').forEach(btn => {
+      btn.addEventListener('click', () => btn.closest('.product-modal').classList.remove('active'));
+    });
+
+    window.addEventListener('click', e => {
+      if (e.target.classList.contains('product-modal')) e.target.classList.remove('active');
+    });
   </script>
 </body>
 </html>
-
-
