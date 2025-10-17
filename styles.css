@@ -1295,7 +1295,7 @@ footer {
     font-size: 15px;
   }
 
-  /* Keep rest of the layout adaptive */
+  /* Keep rest of the layout adaptive */  
   .hero {
     height: 500px;
   }
@@ -1321,5 +1321,124 @@ footer {
   .footer-container {
     flex-wrap: wrap;
     gap: 2rem;
+  }
+}
+
+/* ===== PRODUCT MODAL POPUP ===== */
+.product-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.product-modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.modal-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.modal-content p {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-buttons button {
+  padding: 0.7rem 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-cart {
+  background: #f4f4f4;
+}
+
+.add-cart:hover {
+  background: #eaeaea;
+}
+
+.buy-now {
+  background: #000;
+  color: #fff;
+}
+
+.buy-now:hover {
+  background: #222;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== MOBILE RESPONSIVE MODAL ===== */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+  }
+
+  .modal-buttons button {
+    width: 100%;
   }
 }
